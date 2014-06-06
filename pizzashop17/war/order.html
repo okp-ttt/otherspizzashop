@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+<!-- above set at the top of the file will set     -->
+<!-- the browser's rendering engine into           -->
+<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- with a "Standards Mode" doctype is supported, -->
+<!-- but may lead to some differences in layout.   -->
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ピザ注文画面</title>
+  </head>
+
+  <body>
+    <h1>ピザショップようこそ</h1>
+
+<form method="post" action="/add">
+<p>トッピング　１個50円<br>	
+<input type="checkbox" name="topping" value="piman">ピーマン
+<input type="checkbox" name="topping" value="cheese">チーズ
+<input type="checkbox" name="topping" value="tomato">トマト
+<input type="checkbox" name="topping" value="sarami">サラミ
+<input type="checkbox" name="topping" value="coon">コーン
+</p>
+
+<p>クラスト <br>
+<input type="radio" name="crust" value="s">S:100円
+<input type="radio" name="crust" value="m">M:200円
+<input type="radio" name="crust" value="l">L:300円
+</p>
+<p><input type="submit" value="送信する" ></p>
+
+</form>
+  </body>
+</html>
