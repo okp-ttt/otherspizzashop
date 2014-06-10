@@ -1,10 +1,4 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
-<!-- above set at the top of the file will set     -->
-<!-- the browser's rendering engine into           -->
-<!-- "Quirks Mode". Replacing this declaration     -->
-<!-- with a "Standards Mode" doctype is supported, -->
-<!-- but may lead to some differences in layout.   -->
 
 <html>
 <head>
@@ -22,13 +16,13 @@ String msg;
 if( user != null ){
 
   msg = "ようこそ! あなたは <b>" + user.getNickname() + "</b> という名前でログインしています。"
-    + " <a href='" + userService.createLogoutURL("index.html") + "'>サインアウト</a>";
-  
+    + " <a href='" + userService.createLogoutURL("/") + "'>サインアウト</a>"
+	+ "<br>"+ " <a href='checkOrder.html'>店員用ページへ</a>";
 }
 else {
 
   msg = "こんにちは! こちらから "
-    + "<a href='" + userService.createLoginURL("/userauth") + "'>サインイン</a> してください!";
+    + "<a href='" + userService.createLoginURL("checkOrder.html") + "'>サインイン</a> してください!";
 }
 
 System.out.println( msg );
